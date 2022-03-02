@@ -1,8 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import ShopItems from './ShopItems.js';
-import FilterBar from './FilterBar';
-
+import FilterBar from './FilterBar.js';
+import logo from './icons/logoipsum.svg';
 
 function App() {
 
@@ -77,10 +77,13 @@ function App() {
     <div className="App container-fluid bg-white text-center bg-slate-100 dark:bg-slate-900">
       <header className="App-header">
 
-        <img src={logoipsum} alt="" />
-        <h1 className="text-slate-900 dark:text-white text-3xl font-bold underline pt-4 pb-10">
+        
+        {/* <h1 className="text-slate-900 dark:text-white text-3xl font-bold underline pt-4 pb-10">
           Mock Online Shop
-        </h1>
+        </h1> */}
+
+        <img width={250} className="text-slate-900 dark:text-white text-3xl font-bold underline pt-4 pb-10" src={logo} alt="Logo" />
+
         <div id="filter-bar">
           <button className="toggle-hide text-sm font-bold" onClick={hideCategories}>{showOrHide} categories</button>
           <div className="filter-categories">
